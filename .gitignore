@@ -1,0 +1,11 @@
+devel/
+build/
+.idea
+*~
+.catkin_workspace
+log/
+latest
+doc/
+legs_with_muscles_simplified
+src/CMakeLists.txt
+cmake-build-debug/
