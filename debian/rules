@@ -1,0 +1,40 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+export DH_OPTIONS=-v 
+# TODO: remove the LDFLAGS override.  It's here to avoid esoteric problems
+# of this sort:
+#  https://code.ros.org/trac/ros/ticket/2977
+#  https://code.ros.org/trac/ros/ticket/3842
+export LDFLAGS=
+export PKG_CONFIG_PATH=/opt/ros/kinetic/lib/pkgconfig
+# Explicitly enable -DNDEBUG, see:
+# 	https://github.com/ros-infrastructure/bloom/issues/327
+export DEB_CXXFLAGS_MAINT_APPEND=-DNDEBUG
+
+%:
+	dh  $@
+
+override_dh_auto_configure:
+	cd ${CURDIR}/src/roboy_powerlink/openPowerLink/stack/lib/linux && cmake -DCMAKE_BUILD_TYPE=Debug ../.. && make -j9 install && cmake -DCMAKE_BUILD_TYPE=Release ../.. && make -j9 install
+
+override_dh_auto_build:
+	if [ -f "/opt/ros/kinetic/setup.sh" ]; then . "/opt/ros/kinetic/setup.sh"; fi && \
+	catkin_make_isolated
+	
+override_dh_auto_test:
+
+override_dh_shlibdeps:
+
+override_dh_auto_install:
+	if [ -f "/opt/ros/kinetic/setup.sh" ]; then . "/opt/ros/kinetic/setup.sh"; fi && \
+	if [ -f "${CURDIR}/debian/roboy/opt/ros/kinetic/setup.sh" ]; then . "${CURDIR}/debian/roboy/opt/ros/kinetic/setup.sh"; fi && \
+	catkin_make_isolated --install --install-space=${CURDIR}/debian/roboy/opt/ros/kinetic -DCMAKE_BUILD_TYPE=Release
+	find ${CURDIR}/debian/roboy/opt/ros/kinetic -type f -maxdepth 1 -delete
