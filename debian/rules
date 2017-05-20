@@ -23,7 +23,7 @@ export DEB_CXXFLAGS_MAINT_APPEND=-DNDEBUG
 	dh  $@
 
 override_dh_auto_configure:
-	cd ${CURDIR}/src/roboy_powerlink/openPowerLink/stack/lib/linux && cmake -DCMAKE_BUILD_TYPE=Debug ../.. && make -j9 install && cmake -DCMAKE_BUILD_TYPE=Release ../.. && make -j9 install
+	cd ${CURDIR}/src/roboy_powerlink/openPowerLink/stack/build/linux && cmake -DCMAKE_BUILD_TYPE=Debug ../.. && make -j9 install && cmake -DCMAKE_BUILD_TYPE=Release ../.. && make -j9 install
 
 override_dh_auto_build:
 	if [ -f "/opt/ros/kinetic/setup.sh" ]; then . "/opt/ros/kinetic/setup.sh"; fi && \
