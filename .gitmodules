@@ -19,3 +19,21 @@
 [submodule "src/roboy_communication"]
 	path = src/roboy_communication
 	url = https://github.com/Roboy/roboy_communication
+[submodule "src/roboy_mind"]
+	path = src/roboy_mind
+	url = https://github.com/Roboy/roboy_mind.git
+[submodule "src/roboy_generative_nlp"]
+	path = src/roboy_generative_nlp
+	url = https://github.com/Roboy/roboy_generative_nlp.git
+[submodule "src/roboy_move"]
+	path = src/roboy_move
+	url = https://github.com/Roboy/roboy_move.git
+[submodule "src/roboy_speech_recognition"]
+	path = src/roboy_speech_recognition
+	url = https://github.com/Roboy/roboy_speech_recognition.git
+[submodule "src/roboy_speech_synthesis"]
+	path = src/roboy_speech_synthesis
+	url = https://github.com/Roboy/roboy_speech_synthesis.git
+[submodule "src/roboy_face"]
+	path = src/roboy_face
+	url = https://github.com/Roboy/roboy_face.git
