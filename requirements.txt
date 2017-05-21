@@ -1,0 +1,6 @@
+nltk
+pickle
+monotonic    
+pyaudio
+webrtcvad
+

@@ -46,3 +46,7 @@
 [submodule "src/genjava"]
 	path = src/genjava
 	url = https://github.com/rosjava/genjava.git
+[submodule "src/roboy_dialog_system"]
+	path = src/roboy_dialog_system
+	url = https://github.com/Roboy/roboy_dialog_system.git
+
