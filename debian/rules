@@ -27,6 +27,7 @@ override_dh_auto_configure:
 
 override_dh_auto_build:
 	if [ -f "/opt/ros/kinetic/setup.sh" ]; then . "/opt/ros/kinetic/setup.sh"; fi && \
+	pip install -r requirements.txt
 	catkin_make_isolated
 	
 override_dh_auto_test:
@@ -37,4 +38,5 @@ override_dh_auto_install:
 	if [ -f "/opt/ros/kinetic/setup.sh" ]; then . "/opt/ros/kinetic/setup.sh"; fi && \
 	if [ -f "${CURDIR}/debian/roboy/opt/ros/kinetic/setup.sh" ]; then . "${CURDIR}/debian/roboy/opt/ros/kinetic/setup.sh"; fi && \
 	catkin_make_isolated --install --install-space=${CURDIR}/debian/roboy/opt/ros/kinetic -DCMAKE_BUILD_TYPE=Release
+	
 	find ${CURDIR}/debian/roboy/opt/ros/kinetic -type f -maxdepth 1 -delete
