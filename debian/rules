@@ -1,4 +1,5 @@
 #!/usr/bin/make -f
+
 # -*- makefile -*-
 # Sample debian/rules that uses debhelper.
 # This file was originally written by Joey Hess and Craig Small.
@@ -26,8 +27,8 @@ override_dh_auto_configure:
 	cd ${CURDIR}/src/roboy_powerlink/openPowerLink/stack/build/linux && cmake -DCMAKE_BUILD_TYPE=Debug ../.. && make -j9 install && cmake -DCMAKE_BUILD_TYPE=Release ../.. && make -j9 install
 
 override_dh_auto_build:
-	if [ -f "/opt/ros/kinetic/setup.sh" ]; then . "/opt/ros/kinetic/setup.sh"; fi && \
 	pip install -r requirements.txt
+	if [ -f "/opt/ros/kinetic/setup.sh" ]; then . "/opt/ros/kinetic/setup.sh"; fi && \
 	catkin_make_isolated
 	
 override_dh_auto_test:
