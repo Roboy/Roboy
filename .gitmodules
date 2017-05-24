@@ -19,9 +19,6 @@
 [submodule "src/roboy_communication"]
 	path = src/roboy_communication
 	url = https://github.com/Roboy/roboy_communication
-[submodule "src/roboy_mind"]
-	path = src/roboy_mind
-	url = https://github.com/Roboy/roboy_mind.git
 [submodule "src/roboy_generative_nlp"]
 	path = src/roboy_generative_nlp
 	url = https://github.com/Roboy/roboy_generative_nlp.git
@@ -41,3 +38,6 @@
 	path = src/roboy_dialog_system
 	url = https://github.com/Roboy/roboy_dialog_system.git
 
+[submodule "src/roboy_mind"]
+	path = src/roboy_mind
+	url = https://github.com/Roboy/roboy_mind.git
