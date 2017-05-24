@@ -37,12 +37,6 @@
 [submodule "src/knowrob"]
 	path = src/knowrob
 	url = https://github.com/Roboy/knowrob.git
-[submodule "src/rosjava_mvn_repo"]
-	path = src/rosjava_mvn_repo
-	url = https://github.com/Roboy/rosjava_mvn_repo.git
-[submodule "src/genjava"]
-	path = src/genjava
-	url = https://github.com/rosjava/genjava.git
 [submodule "src/roboy_dialog_system"]
 	path = src/roboy_dialog_system
 	url = https://github.com/Roboy/roboy_dialog_system.git
