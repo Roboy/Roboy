@@ -1,6 +1,4 @@
 nltk
-pickle
 monotonic    
-pyaudio
 webrtcvad
-
+tensorflow==0.12.1

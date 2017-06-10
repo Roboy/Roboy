@@ -19,9 +19,6 @@
 [submodule "src/roboy_communication"]
 	path = src/roboy_communication
 	url = https://github.com/Roboy/roboy_communication
-[submodule "src/roboy_mind"]
-	path = src/roboy_mind
-	url = https://github.com/Roboy/roboy_mind.git
 [submodule "src/roboy_generative_nlp"]
 	path = src/roboy_generative_nlp
 	url = https://github.com/Roboy/roboy_generative_nlp.git
@@ -38,13 +35,10 @@
 [submodule "src/knowrob"]
 	path = src/knowrob
 	url = https://github.com/Roboy/knowrob.git
-[submodule "src/rosjava_mvn_repo"]
-	path = src/rosjava_mvn_repo
-	url = https://github.com/Roboy/rosjava_mvn_repo.git
-[submodule "src/genjava"]
-	path = src/genjava
-	url = https://github.com/rosjava/genjava.git
 [submodule "src/roboy_dialog_system"]
 	path = src/roboy_dialog_system
 	url = https://github.com/Roboy/roboy_dialog_system.git
 
+[submodule "src/roboy_mind"]
+	path = src/roboy_mind
+	url = https://github.com/Roboy/roboy_mind.git
