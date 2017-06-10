@@ -25,6 +25,7 @@
 [submodule "src/roboy_generative_nlp"]
 	path = src/roboy_generative_nlp
 	url = https://github.com/Roboy/roboy_generative_nlp.git
+	branch = ros
 [submodule "src/roboy_speech_recognition"]
 	path = src/roboy_speech_recognition
 	url = https://github.com/Roboy/roboy_speech_recognition.git
