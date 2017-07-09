@@ -39,6 +39,3 @@
 	path = src/roboy_dialog_system
 	url = https://github.com/Roboy/roboy_dialog_system.git
 
-[submodule "src/roboy_mind"]
-	path = src/roboy_mind
-	url = https://github.com/Roboy/roboy_mind.git
