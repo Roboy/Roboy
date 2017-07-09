@@ -32,9 +32,6 @@
 [submodule "src/roboy_face"]
 	path = src/roboy_face
 	url = https://github.com/Roboy/roboy_face.git
-[submodule "src/knowrob"]
-	path = src/knowrob
-	url = https://github.com/Roboy/knowrob.git
 [submodule "src/roboy_dialog_system"]
 	path = src/roboy_dialog_system
 	url = https://github.com/Roboy/roboy_dialog_system.git
