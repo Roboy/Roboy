@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package>
+  <name>roboy_cognition_manager</name>
+  <version>2.0.0</version>
+  <description>Manages nodes for Roboy cognition.</description>
+
+  <maintainer email="unicorn@roboy.org">Alona Kharchenko</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  
+<!-- 
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>roboy_communication_control</run_depend>
+  <run_depend>roboy_communication_cognition</run_depend>
+  <run_depend>speech_synthesis</run_depend>
+  <run_depend>roboy_speech_recognition</run_depend>
+ -->
+</package>

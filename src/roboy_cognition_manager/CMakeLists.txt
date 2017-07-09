@@ -5,11 +5,10 @@ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -g")
 
 ## Find catkin macros and libraries
 # find_package(catkin REQUIRED COMPONENTS
-#   rospy
-#   std_msgs
-#   message_generation
 #   roboy_communication_control
-  
+#   roboy_speech_recognition
+#   roboy_communication_cognition
+#   speech_synthesis
 # )
 
 #  services in the 'srv' folder

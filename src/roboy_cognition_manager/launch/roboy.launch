@@ -24,11 +24,17 @@
 	<!-- movement -->
 	<!-- <node name="move" pkg="roboy_move" type="move.py" respawn="true" output="screen" /> -->
 
+	<!-- face --> 
+	<node name="unity_face" pkg="roboy_face" type="unity_face.py" respawn="true" output="screen" />
+
+
 	<!-- rosbridge_websocket -->
 	<node name="rosbridge" pkg="rosbridge_server" type="rosbridge_websocket" />
 
 	<!-- rosbridge_tcpsocket -->
-	<node name="rosbridge" pkg="rosbridge_server" type="rosbridge_tcpsocket" port="9091" />
+	<include file="$(find rosbridge_server)/launch/rosbridge_tcp.launch"> 
+     <arg name="port" value="9091"/>
+	</include>
 
 	
 </launch>
