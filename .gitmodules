@@ -36,3 +36,6 @@
 	path = src/roboy_dialog_system
 	url = https://github.com/Roboy/roboy_dialog_system.git
 
+[submodule "src/roboy_cognition_manager"]
+	path = src/roboy_cognition_manager
+	url = https://github.com/Roboy/roboy_cognition_manager.git
