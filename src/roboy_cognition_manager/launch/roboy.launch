@@ -1,0 +1,34 @@
+<launch>
+	<!-- speech synthesis -->
+	<rosparam command="load" file="$(find speech_synthesis)/yaml/speech_synthesis.yaml" />
+    <node pkg="speech_synthesis" type="tts_server.py" name="speech_synthesis" respawn="true" output="screen"/>
+
+    <!-- vision -->
+    <!--  <node name="face_detect" pkg="vision_service" type="face_detector.py" output="screen" />
+	<node name="face_recognize" pkg="vision_service" type="face_recognizer.py" output="screen" /> -->
+
+	<!-- speech recognition -->
+	<node name="speech_recognize" pkg="roboy_speech_recognition" type="stt_server.py" output="screen" />
+
+	<!-- generative NLP -->
+	<!-- <param name="seq2seq/dataset_dir"  value="$(find roboy_generative_nlp)/include/Datasets/twitter/processed" type="str"/>
+	<param name="seq2seq/ckpt_dir" value="$(find roboy_generative_nlp)/include/Datasets/twitter/checkpoints" type="str"/>
+	<param name="seq2seq/batch_size"  value="16" type="int"/>
+	<param name="seq2seq/epochs"  value="500" type="int"/>
+	<param name="seq2seq/lr"  value="0.0001" type="double" />
+	<param name="seq2seq/num_layers"  value="3" type="int" />
+	<param name="seq2seq/emb_dim"  value="1024" type="int" /> -->
+
+	<!-- <node name="GNLP" pkg="roboy_generative_nlp" type="seq2seq_ros.py" output="screen" /> -->
+
+	<!-- movement -->
+	<!-- <node name="move" pkg="roboy_move" type="move.py" respawn="true" output="screen" /> -->
+
+	<!-- rosbridge_websocket -->
+	<node name="rosbridge" pkg="rosbridge_server" type="rosbridge_websocket" />
+
+	<!-- rosbridge_tcpsocket -->
+	<node name="rosbridge" pkg="rosbridge_server" type="rosbridge_tcpsocket" port="9091" />
+
+	
+</launch>
