@@ -39,6 +39,6 @@
 [submodule "src/roboy_cognition_manager"]
 	path = src/roboy_cognition_manager
 	url = https://github.com/Roboy/roboy_cognition_manager.git
-[submodule "src/intent_classification"]
-	path = src/intent_classification
-	url = https://github.com/Roboy/intent_classification.git
+[submodule "src/roboy_intents_classification"]
+	path = src/roboy_intents_classification
+	url = https://github.com/Roboy/roboy_intents_classification.git
