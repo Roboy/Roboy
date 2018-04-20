@@ -1,24 +1,18 @@
-[submodule "src/roboy_controller"]
-	path = src/roboy_controller
-	url = https://github.com/Roboy/roboy_controller
-[submodule "src/roboy_managing_node"]
-	path = src/roboy_managing_node
-	url = https://github.com/Roboy/roboy_managing_node
-[submodule "src/roboy_powerlink"]
-	path = src/roboy_powerlink
-	url = https://github.com/Roboy/roboy_powerlink
 [submodule "src/roboy_simulation"]
 	path = src/roboy_simulation
 	url = https://github.com/Roboy/roboy_simulation
 [submodule "src/common_utilities"]
 	path = src/common_utilities
 	url = https://github.com/Roboy/common_utilities
+	branch = master
 [submodule "src/roboy_models"]
 	path = src/roboy_models
 	url = https://github.com/Roboy/roboy_models
+	branch = VRTeam
 [submodule "src/roboy_communication"]
 	path = src/roboy_communication
 	url = https://github.com/Roboy/roboy_communication
+	branch = master
 [submodule "src/roboy_generative_nlp"]
 	path = src/roboy_generative_nlp
 	url = https://github.com/Roboy/roboy_generative_nlp.git
@@ -26,19 +20,39 @@
 [submodule "src/roboy_speech_recognition"]
 	path = src/roboy_speech_recognition
 	url = https://github.com/Roboy/roboy_speech_recognition.git
+	branch = master
 [submodule "src/roboy_speech_synthesis"]
 	path = src/roboy_speech_synthesis
 	url = https://github.com/Roboy/roboy_speech_synthesis.git
+	branch = master
 [submodule "src/roboy_face"]
 	path = src/roboy_face
 	url = https://github.com/Roboy/roboy_face.git
-[submodule "src/roboy_dialog_system"]
-	path = src/roboy_dialog_system
-	url = https://github.com/Roboy/roboy_dialog_system.git
-
+	branch = master
 [submodule "src/roboy_cognition_manager"]
 	path = src/roboy_cognition_manager
 	url = https://github.com/Roboy/roboy_cognition_manager.git
-[submodule "src/roboy_intents_classification"]
-	path = src/roboy_intents_classification
-	url = https://github.com/Roboy/roboy_intents_classification.git
+	branch = master
+[submodule "src/roboy_rqt_plugins"]
+	path = src/roboy_rqt_plugins
+	url = https://github.com/Roboy/roboy_rqt_plugins.git
+	branch = master
+[submodule "src/roboy_dialog"]
+	path = src/roboy_dialog
+	url = https://github.com/Roboy/roboy_dialog.git
+	branch = master
+[submodule "src/roboy_plexus"]
+	path = src/roboy_plexus
+	url = https://github.com/Roboy/roboy_plexus.git
+	branch = master
+[submodule "src/DeepQA"]
+	path = src/DeepQA
+	url = https://github.com/Roboy/DeepQA.git
+[submodule "src/roboy_vision"]
+	path = src/roboy_vision
+	url = https://github.com/Roboy/roboy_vision.git
+	master = services
+[submodule "src/RoboyUnityFace"]
+	path = src/RoboyUnityFace
+	url = https://github.com/Roboy/RoboyUnityFace.git
+	branch = xtin/roboy2.0 
