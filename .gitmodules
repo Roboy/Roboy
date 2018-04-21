@@ -16,7 +16,7 @@
 [submodule "src/roboy_generative_nlp"]
 	path = src/roboy_generative_nlp
 	url = https://github.com/Roboy/roboy_generative_nlp.git
-	branch = ros
+	branch = master
 [submodule "src/roboy_speech_recognition"]
 	path = src/roboy_speech_recognition
 	url = https://github.com/Roboy/roboy_speech_recognition.git
@@ -56,3 +56,6 @@
 	path = src/RoboyUnityFace
 	url = https://github.com/Roboy/RoboyUnityFace.git
 	branch = xtin/roboy2.0 
+[submodule "src/roboy_nodered_ui"]
+	path = src/roboy_nodered_ui
+	url = https://github.com/Roboy/roboy_nodered_ui.git
