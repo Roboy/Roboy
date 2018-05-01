@@ -53,8 +53,9 @@ If you run gazebo now it should pop up without complaints and show an empty worl
 
 #### other dependencies
 ```
-#!bash
-sudo apt install libpcap-dev swi-prolog swi-prolog-java libjson-glib-dev ros-kinetic-rosjava python-pyaudio maven
+#!bash 
+sudo apt install ros-kinetic-controller-manager ros-kinetic-gazebo-ros-control
+sudo apt install libpcap-dev libjson-glib-dev ros-kinetic-rosjava python-pyaudio maven
 ```
 ## clone repo with submodules
 ```
@@ -96,20 +97,4 @@ this is probably because ros cannot find the headers it just created. You need t
 source devel/setup.bash
 catkin_make
 ```
-## Documentation ##
-Generate a doxygen documentation using the following command:
-```
-#!bash
-cd path/to/Roboy
-doxygen Doxyfile
-```
-The documentation is put into the doc folder.
 
-# Run it
-## 
-```
-#!bash
-sudo -s                                                 # so far the openPowerLink stack can only be run as root
-source /opt/ros/kinetic/setup.bash                      # You will probably need to to this, since the .bashrc is for each   source /path/to/Roboy/devel/setup.bash      # user, ie. not for root 
-roslaunch roboy_managing_node roboy.launch
-```
