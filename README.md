@@ -28,6 +28,8 @@ sudo apt install ros-kinetic-controller-interface ros-kinetic-controller-manager
 #### install packages from roboy.org
 ```
 #!bash
+sudo add-apt-repository ppa:letrend/libcmaes
+sudo apt-get update
 sudo apt install libcmaes
 ```
 #### install gazebo7 and gazebo-ros-pkgs
