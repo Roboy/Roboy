@@ -68,7 +68,7 @@ cd Roboy
 Now this is very important. For both build and especially running the code successfully you will need to define some env variables and source some stuff. Add the following lines to your ~/.bashrc (adjusting the paths to your system):
 ```
 #!bash
-source /usr/share/gazebo-7.0/setup.sh
+source /usr/share/gazebo-7/setup.sh
 export GAZEBO_MODEL_PATH=/path/to/Roboy/src/roboy_models:$GAZEBO_MODEL_PATH
 export GAZEBO_PLUGIN_PATH=/path/to/Roboy/devel/lib:$GAZEBO_PLUGIN_PATH
 export GAZEBO_RESOURCE_PATH=/path/to/Roboy/src/roboy_models:$GAZEBO_RESOURCE_PATH
