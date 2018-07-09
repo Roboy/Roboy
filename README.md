@@ -39,7 +39,7 @@ sudo apt-get install ros-kinetic-gazebo-ros-pkgs
 You should try to run gazebo now, to make sure its working.
 ```
 #!bash
-source /usr/share/gazebo-7.0/setup.sh
+source /usr/share/gazebo-7/setup.sh
 gazebo --verbose
 ```
 If you seen an output like, 'waiting for namespace'...'giving up'. Gazebo hasn't been able to download the models. You will need to do this manually. Go to the osrf [bitbucket](https://bitbucket.org/osrf/gazebo_models/downloads), click download repository. Then unzip and move to gazebo models path:
@@ -68,7 +68,7 @@ cd Roboy
 Now this is very important. For both build and especially running the code successfully you will need to define some env variables and source some stuff. Add the following lines to your ~/.bashrc (adjusting the paths to your system):
 ```
 #!bash
-source /usr/share/gazebo-7.0/setup.sh
+source /usr/share/gazebo-7/setup.sh
 export GAZEBO_MODEL_PATH=/path/to/Roboy/src/roboy_models:$GAZEBO_MODEL_PATH
 export GAZEBO_PLUGIN_PATH=/path/to/Roboy/devel/lib:$GAZEBO_PLUGIN_PATH
 export GAZEBO_RESOURCE_PATH=/path/to/Roboy/src/roboy_models:$GAZEBO_RESOURCE_PATH
