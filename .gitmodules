@@ -62,3 +62,6 @@
 [submodule "src/ParlAI"]
 	path = src/ParlAI
 	url = https://github.com/Roboy/ParlAI.git
+[submodule "src/ros_ncs"]
+	path = src/ros_ncs
+	url = https://github.com/Roboy/ros_intel_movidius_ncs
