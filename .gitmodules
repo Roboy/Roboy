@@ -59,3 +59,6 @@
 [submodule "src/roboy_nodered_ui"]
 	path = src/roboy_nodered_ui
 	url = https://github.com/Roboy/roboy_nodered_ui.git
+[submodule "src/ParlAI"]
+	path = src/ParlAI
+	url = https://github.com/Roboy/ParlAI.git
